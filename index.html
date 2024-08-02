@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="PaleVioletRed">
+    <h1><font color="white"><center>Lista de Tarefas da Dudinha</center></font> </h1>
+    <ol><center><font color="white"><h3>
+        {% for tarefa in tarefas %} 
+        <li>{{ tarefa.descricao }} -- {% if tarefa.concluido %}Completa{% else %}Pendente{% endif %}</li>
+        {% endfor %}
+    </ol></center></font></h3>
+</body>
+</html>
